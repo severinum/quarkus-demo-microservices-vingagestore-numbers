@@ -27,6 +27,10 @@ Available at http://[host]:[port]/q/openapi
 
 http://localhost:8701/q/swagger-ui/
 
+## SonarCloud
+
+https://sonarcloud.io/summary/overall?id=severinum_quarkus-demo-microservices-vingagestore-numbers
+
 ## Packaging and running the application
 
 The application can be packaged using:
