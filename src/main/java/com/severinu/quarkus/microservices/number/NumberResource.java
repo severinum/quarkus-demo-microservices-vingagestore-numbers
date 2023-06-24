@@ -1,4 +1,4 @@
-package com.severinu.quarkus.microservices;
+package com.severinu.quarkus.microservices.number;
 
 import com.severinu.quarkus.microservices.number.IsbnNumbers;
 import com.severinu.quarkus.microservices.number.IsbnNumbersGenerator;

@@ -24,5 +24,5 @@ public class IsbnNumbers {
     public String isbn13;
 
     @JsonbTransient
-    public Instant generationDate;
+    public Instant dateCreated;
 }
