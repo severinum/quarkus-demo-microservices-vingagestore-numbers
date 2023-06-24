@@ -5,17 +5,20 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.startsWith;
 
 @QuarkusTest
-public class NumberResourceTest {
+class NumberResourceTest {
 
     @Test
-    public void testHelloEndpoint() {
+    public void testGetNumbers() {
         given()
           .when().get("/api/numbers")
           .then()
              .statusCode(200)
-             .body(is("Hello RESTEasy"));
+                .body("size()", is(2))
+                .body("isbn_10", startsWith("10-"))
+                .body("isbn_13", startsWith("13-"));
     }
 
 }
