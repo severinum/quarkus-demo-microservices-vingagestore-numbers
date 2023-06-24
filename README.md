@@ -1,4 +1,6 @@
-# rest-number
+# Quarkus Microservices Demo - VintageStore - Numbers
+
+Part of `Quarkus Microservices Demo - VintageStore`
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -12,6 +14,18 @@ You can run your application in dev mode that enables live coding using:
 ```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
+
+## OpenAPI endpoint
+
+Available at http://[host]:[port]/q/openapi
+
+`curl http://localhost:8701/q/openapi` for yml version
+
+`curl http://localhost:8701/q/openapi -H "Accept:application/json` for json version
+
+## Swagger
+
+http://localhost:8701/q/swagger-ui/
 
 ## Packaging and running the application
 
